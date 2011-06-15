@@ -1,5 +1,8 @@
-class ReferrerTracker::ReferrerTrack < ActiveRecord::Base
-
-    set_table_name 'referrer_tracks'
+class ReferrerTracker::ReferrerTrack
+  include Mongoid::Document
+	
+  field	:source
+  field	:track
+  field	:step, :type => Integer
 
 end

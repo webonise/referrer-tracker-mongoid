@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["rtdp"]
-  s.date = %q{2011-06-01}
+  s.date = %q{2011-06-02}
   s.description = %q{It pulls in the ?ref= and ?sr= type references from urls and marks visitor comings from those urls.}
   s.email = %q{rtdp@weboniselab.com}
   s.extra_rdoc_files = [
@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "init.rb",
     "install.rb",
-    "lib/app/models/referrer_track.rb",
+    "lib/app/models/referrer_tracker/referrer_track.rb",
     "lib/db/migrate/20110523140707_create_referrer_track_model.rb",
     "lib/db/schema.rb",
     "lib/referrer_tracker.rb",
@@ -41,7 +41,7 @@ Gem::Specification.new do |s|
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
-    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.5.0') then
+    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
     else
     end
   else
