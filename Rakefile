@@ -25,11 +25,11 @@
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "referrer_tracker"
+  gem.name = "referrer_tracker_mongoid"
   gem.summary = %Q{Tracks the urls references.}
   gem.description = %Q{It pulls in the ?ref= and ?sr= type references from urls and marks visitor comings from those urls.}
   gem.email = "rtdp@weboniselab.com"
   gem.authors = ["rtdp"]
-  gem.version = "0.1.5"
+  gem.version = "0.0.1"
 end
 Jeweler::RubygemsDotOrgTasks.new
